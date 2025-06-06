@@ -34,6 +34,15 @@ dependencies {
 
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
     runtimeOnly("org.postgresql:postgresql")
+
+    // DB Migrations
+    implementation("org.flywaydb:flyway-core:9.22.0")
+
+    // To add validation in entities
+    implementation("org.springframework.boot:spring-boot-starter-validation")
+
+    // To enable swagger endpoint
+    implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.5.0")
 }
 
 tasks.test {
