@@ -43,6 +43,9 @@ dependencies {
 
     // To enable swagger endpoint
     implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.5.0")
+
+    // To support .env file
+    implementation("me.paulschwarz:spring-dotenv:4.0.0")
 }
 
 tasks.test {
